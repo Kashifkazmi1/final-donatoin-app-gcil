@@ -1,0 +1,36 @@
+name: gcil_donation_app
+description: Kiosk-style donation app with Stripe Tap to Pay.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Community wrapper around the official Stripe Terminal native SDKs.
+  # Supports Tap to Pay (localMobile).
+  # Check https://pub.dev/packages/mek_stripe_terminal for the latest version.
+  mek_stripe_terminal: ^3.5.0
+  http: ^1.2.0
+  # For requesting location permission at runtime
+  permission_handler: ^11.3.0
+  flutter_launcher_icons: ^0.14.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "C:\\Users\\Qarar\\Downloads\\Ghamidi-Logo-01-01-4-min-e1700653189115-2048x516.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "C:\\Users\\Qarar\\Downloads\\Ghamidi-Logo-01-01-4-min-e1700653189115-2048x516.png"
+  remove_alpha_ios: true
